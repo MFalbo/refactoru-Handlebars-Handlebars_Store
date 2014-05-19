@@ -17,7 +17,16 @@
   	<div class="product">
   		<h2>{{title}}</h2>
   		<img src={{image}}>
-  		<p><b>Cost: ${{cost}}</b></p>
+  		<h3>Details:</h3>
+	  		{{#each details}}
+	  			<b>{{@key}}:</b>{{this}}</br>
+			{{/each}}
+  		{{#if sale}}
+  			<p class="strike-through"><b>Cost: ${{cost}}</b></p>
+  			<p><b>Sale: ${{sale}}</b></p>
+		{{else}}
+  			<p><b>Cost: ${{cost}}</b></p>
+		{{/if}}
 		<button class="add-btn">Add to Wishlist</button>
   	</div>
   </script>

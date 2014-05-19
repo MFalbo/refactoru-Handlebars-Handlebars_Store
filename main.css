@@ -9,9 +9,14 @@
 	padding: 0 5px;
 	text-align: center;
 	overflow: hidden;
+	max-width: 30%;
 }
 
 .product img{
 	display: block;
 	margin: 0 auto;
+}
+
+.strike-through{
+	text-decoration: line-through;
 }
