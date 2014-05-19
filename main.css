@@ -1,9 +1,14 @@
+#product-container{
+	overflow: hidden;
+}
+
 .product{
 	float: left;
 	margin: 0 20px;
 	background-color: #EEE;
 	padding: 0 5px;
 	text-align: center;
+	overflow: hidden;
 }
 
 .product img{
